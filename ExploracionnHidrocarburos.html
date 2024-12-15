@@ -6,10 +6,11 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="./resources/ol.css">
+        <!-- Asegúrate de que las rutas sean correctas en GitHub -->
+        <link rel="stylesheet" href="resources/ol.css">
         <link rel="stylesheet" href="resources/fontawesome-all.min.css">
-        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
-        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <link rel="stylesheet" href="resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="resources/qgis2web.css">
         <style>
         html, body {
             background-color: #ffffff;
@@ -42,7 +43,7 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>Mapa interactivo</title>
     </head>
     <body>
         <div id="map">
@@ -51,16 +52,37 @@
                 <div id="popup-content"></div>
             </div>
         </div>
+
+        <!-- Verifica que los scripts estén correctamente enlazados -->
         <script src="resources/qgis2web_expressions.js"></script>
-<script src="resources/proj4.js"></script>
+        <script src="resources/proj4.js"></script>
         <script>proj4.defs('EPSG:4326','+proj=longlat +datum=WGS84 +no_defs');</script>
-        <script src="./resources/functions.js"></script>
-        <script src="./resources/ol.js"></script>
-        <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="layers/ProfundidadpromediodeYacimientos_1.js"></script><script src="layers/PermisosdeExploracinOffshore_2.js"></script><script src="layers/PermisosdeExploracin_3.js"></script><script src="layers/LotesdeExploracin_4.js"></script><script src="layers/ExploracinenCuencasSedimentarias_5.js"></script><script src="layers/LineamientosGeofsicosOcenicos_6.js"></script><script src="layers/LneasSsmicas2D_7.js"></script><script src="layers/reasSsmicas3D_8.js"></script>
-        <script src="styles/ProfundidadpromediodeYacimientos_1_style.js"></script><script src="styles/PermisosdeExploracinOffshore_2_style.js"></script><script src="styles/PermisosdeExploracin_3_style.js"></script><script src="styles/LotesdeExploracin_4_style.js"></script><script src="styles/ExploracinenCuencasSedimentarias_5_style.js"></script><script src="styles/LineamientosGeofsicosOcenicos_6_style.js"></script><script src="styles/LneasSsmicas2D_7_style.js"></script><script src="styles/reasSsmicas3D_8_style.js"></script>
-        <script src="./layers/layers.js" type="text/javascript"></script> 
-        <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>
+        <script src="resources/functions.js"></script>
+        <script src="resources/ol.js"></script>
+        <script src="resources/ol-layerswitcher.js"></script>
+
+        <!-- Asegúrate de que los archivos de las capas estén en la ubicación correcta -->
+        <script src="layers/ProfundidadpromediodeYacimientos_1.js"></script>
+        <script src="layers/PermisosdeExploracinOffshore_2.js"></script>
+        <script src="layers/PermisosdeExploracin_3.js"></script>
+        <script src="layers/LotesdeExploracin_4.js"></script>
+        <script src="layers/ExploracinenCuencasSedimentarias_5.js"></script>
+        <script src="layers/LineamientosGeofsicosOcenicos_6.js"></script>
+        <script src="layers/LneasSsmicas2D_7.js"></script>
+        <script src="layers/reasSsmicas3D_8.js"></script>
+
+        <!-- Archivos de estilo para las capas -->
+        <script src="styles/ProfundidadpromediodeYacimientos_1_style.js"></script>
+        <script src="styles/PermisosdeExploracinOffshore_2_style.js"></script>
+        <script src="styles/PermisosdeExploracin_3_style.js"></script>
+        <script src="styles/LotesdeExploracin_4_style.js"></script>
+        <script src="styles/ExploracinenCuencasSedimentarias_5_style.js"></script>
+        <script src="styles/LineamientosGeofsicosOcenicos_6_style.js"></script>
+        <script src="styles/LneasSsmicas2D_7_style.js"></script>
+        <script src="styles/reasSsmicas3D_8_style.js"></script>
+
+        <!-- Finalización -->
+        <script src="resources/Autolinker.min.js"></script>
+        <script src="resources/qgis2web.js"></script>
     </body>
 </html>
